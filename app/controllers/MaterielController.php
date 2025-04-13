@@ -161,7 +161,7 @@ class MaterielController {
         exit();
     }
 
-    public function editForm() {
+    public function edit() {
         if (session_status() == PHP_SESSION_NONE) {
             session_start();
         }
