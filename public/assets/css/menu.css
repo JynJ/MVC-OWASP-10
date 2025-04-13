@@ -1,0 +1,124 @@
+/* /public/assets/css/menu.css */
+
+/* Police depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3; /* Fond global clair */
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+}
+
+/* En-tête + Menu */
+header {
+    background-color: #d39c6f; /* Bandeau orange */
+    padding: 10px 20px;        /* Padding global */
+}
+
+/* Titre dans l'en-tête */
+.header-title {
+    margin: 0;
+    font-size: 1.8em;
+    color: #eae3e3; /* Titre en noir */
+}
+
+/* Organisation du contenu du header :
+   On affiche le titre en haut,
+   en dessous (ou sur la même ligne) le nav. */
+header {
+    display: block; /* on peut laisser block ou flex selon besoin */
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;            /* rend le menu + la recherche sur une même ligne */
+    align-items: center;      /* aligne verticalement au centre */
+    margin-top: 5px;
+}
+
+/* Liste UL du menu */
+ul.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Items du menu */
+ul.menu li {
+    margin-right: 20px;
+}
+
+/* Liens du menu */
+ul.menu li a {
+    text-decoration: none;
+    color: #efeded; /* Liens en noir */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+ul.menu li a:hover {
+    color: #ffd358; /* Survol doré */
+}
+
+/* Barre de recherche poussée à droite via margin-left: auto */
+.search-container {
+    margin-left: auto;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 6px 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-container input[type="submit"] {
+    padding: 6px 10px;
+    margin-left: 5px;
+    font-size: 1rem;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container input[type="submit"]:hover {
+    background-color: #285e8e;
+}
+
+/* Zone de contenu */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Tableaux dans le contenu */
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content table th,
+.content table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.content table th {
+    background-color: #eee;
+}

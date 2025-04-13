@@ -1,0 +1,20 @@
+/* /public/assets/css/se_connecter.css */
+body {
+    background: #eee;
+}
+
+#frm {
+    border: solid rgb(113, 109, 109) 1px;
+    width: 20%;
+    border-radius: 5px;
+    margin: 100px auto;
+    background: white;
+    padding: 40px;
+}
+
+#btn {
+    color: #fff;
+    background: #337ab7;
+    padding: 5px;
+    scroll-margin-left: 69%;
+}

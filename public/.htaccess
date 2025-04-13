@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Forcer l'accès en HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Masquer l'affichage des erreurs à l'écran (pour la production)
+php_flag display_errors Off
+
+# Activer la journalisation des erreurs et définir le fichier de log
+php_flag log_errors On
+php_value error_log "C:/xampp/apache/logs/php_error.log"
+
+# Paramètres de session sécurisés
+php_value session.cookie_secure 1
+php_flag session.cookie_httponly On
+php_value session.cookie_samesite "Strict"
